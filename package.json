@@ -1,7 +1,7 @@
 {
   "name": "shortcuts-font",
   "description": "A minimal font designed to beutifully render characters used for representing shortcuts.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -10,8 +10,7 @@
     "compile:watch": "tsc --skipLibCheck --watch",
     "font:build": "node dist/build.js",
     "font:extract": "node dist/extract.js",
-    "font:update": "npm run clean && npm run font:extract && npm run font:build",
-    "prepublishOnly": "npm run clean && npm run compile"
+    "font:update": "npm run clean && npm run font:extract && npm run font:build"
   },
   "bugs": {
     "url": "https://github.com/fabiospampinato/shortcuts-font/issues"
