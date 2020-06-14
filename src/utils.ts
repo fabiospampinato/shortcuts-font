@@ -28,7 +28,7 @@ const Utils = {
 
     return _.uniq ( Object.values ( Consts.id2symbol ).reduce ( ( acc, symbol ) => {
 
-      return [...acc, ...Array.from ( symbol.toLowerCase () )];
+      return [...acc, ...Array.from ( symbol.toLowerCase () ), ...Array.from ( symbol.toUpperCase ())];
 
     }, [] ) );
 
