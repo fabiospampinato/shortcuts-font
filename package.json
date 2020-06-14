@@ -5,12 +5,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "clean": "rimraf resources/glyphs/* resources/fonts/*",
+    "clean": "rimraf resources/glyphs_extracted/* resources/fonts/*",
     "compile": "tsc --skipLibCheck && tstei",
     "compile:watch": "tsc --skipLibCheck --watch",
-    "font:build": "node dist/build/index.js",
-    "font:extract": "node dist/extract/index.js",
-    "font:update": "run clean && npm run font:extract && npm run font:build",
+    "font:build": "node dist/build.js",
+    "font:extract": "node dist/extract.js",
+    "font:update": "npm run clean && npm run font:extract && npm run font:build",
     "prepublishOnly": "npm run clean && npm run compile"
   },
   "bugs": {
