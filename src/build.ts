@@ -2,10 +2,10 @@
 /* IMPORT */
 
 import IconFontBuildr from 'icon-font-buildr';
-import {FONTS, SOURCES} from './consts';
-import Utils from './utils';
+import {FONTS, SOURCES} from './constants.js';
+import Utils from './utils.js';
 
-/* BUILD */
+/* MAIN */
 
 const build = () => {
 

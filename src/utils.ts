@@ -1,13 +1,14 @@
 
 /* IMPORT */
 
-import 'jsdom-global/register';
-import * as _ from 'lodash';
-import Consts from 'shortcuts/dist/consts';
+import {ID2SYMBOL} from 'shortcuts/maps';
+import type {Icon} from 'icon-font-buildr/dist/types';
 
-/* UTILS */
+/* MAIN */
 
 const Utils = {
+
+  /* API */
 
   getCodepoints: (): number[] => {
 
@@ -15,28 +16,36 @@ const Utils = {
 
   },
 
-  getIcons: () => {
+  getIcons: (): Icon[] => {
 
     return Utils.getUnicodes ().map ( unicode => ({
       icon: unicode,
-      codepoints: [String.fromCodePoint ( parseInt ( unicode, 16 ) )]
+      name: unicode,
+      codepoints: [String.fromCodePoint ( parseInt ( unicode, 16 ) )],
+      ligatures: []
     }));
 
   },
 
   getSymbols: (): string[] => {
 
-    return _.uniq ( Object.values ( Consts.id2symbol ).reduce ( ( acc, symbol ) => {
+    return Utils.uniq ( Object.values ( ID2SYMBOL ).reduce ( ( acc, symbol ) => {
 
       return [...acc, ...Array.from ( symbol.toLowerCase () ), ...Array.from ( symbol.toUpperCase ())];
 
-    }, [] ) );
+    }, <string[]> [] ) );
 
   },
 
   getUnicodes: (): string[] => {
 
     return Utils.getCodepoints ().map ( codepoint => `0000${codepoint.toString ( 16 )}`.slice ( -4 ) );
+
+  },
+
+  uniq: <T> ( values: T[] ): T[] => {
+
+    return Array.from ( new Set ( values ) );
 
   }
 
