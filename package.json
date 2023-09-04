@@ -6,22 +6,18 @@
   "type": "module",
   "scripts": {
     "clean": "tsex clean",
-    "compile": "tsc --skipLibCheck",
-    "compile:watch": "tsc --skipLibCheck --watch",
-    "font:build": "node dist/build.js",
-    "font:extract": "node dist/extract.js",
-    "font:update": "npm run font:extract && npm run font:build",
-    "prepublishOnly": "npm run clean && npm run compile && npm run font:update"
+    "build": "ifont build -i resources/icons/**/*.svg -o resources/fonts/ShortcutsFont.ttf",
+    "demo": "open resources/demo/index.html",
+    "preview": "ifont preview -i resources/icons/**/*.svg",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
     "shortcuts",
     "font"
   ],
   "devDependencies": {
-    "@types/node": "^18.14.0",
-    "icon-font-buildr": "^2.0.0",
-    "shortcuts": "^2.0.3",
-    "tsex": "^2.2.1",
-    "typescript": "^4.9.5"
+    "ifont": "^1.0.2",
+    "shortcuts": "^3.0.1",
+    "tsex": "^3.0.1"
   }
 }

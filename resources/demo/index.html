@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shortcuts Font | Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <style>
+      @font-face {
+        font-family: ShortcutsFont;
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(../fonts/ShortcutsFont.ttf) format('opentype');
+      }
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 40px;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      .showcase h2:first-child {
+        margin-top: 0;
+      }
+      .shortcut {
+        font-family: ShortcutsFont;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.25rem;
+        height: 1.25rem;
+      }
+      .shortcuts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        height: 2em;
+      }
+    </style>
+
+    <div class="showcase">
+
+      <h2>Modifiers</h2>
+
+      <div class="shortcut" title="Control">⌃</div>
+      <div class="shortcut" title="Alt">⌥</div>
+      <div class="shortcut" title="Command">⌘</div>
+      <div class="shortcut" title="Shift">⇧</div>
+
+      <h2>Digits</h2>
+
+      <div class="shortcut" title="0">0</div>
+      <div class="shortcut" title="1">1</div>
+      <div class="shortcut" title="2">2</div>
+      <div class="shortcut" title="3">3</div>
+      <div class="shortcut" title="4">4</div>
+      <div class="shortcut" title="5">5</div>
+      <div class="shortcut" title="6">6</div>
+      <div class="shortcut" title="7">7</div>
+      <div class="shortcut" title="8">8</div>
+      <div class="shortcut" title="9">9</div>
+
+      <h2>Lowercase</h2>
+
+      <div class="shortcut" title="a">a</div>
+      <div class="shortcut" title="b">b</div>
+      <div class="shortcut" title="c">c</div>
+      <div class="shortcut" title="d">d</div>
+      <div class="shortcut" title="e">e</div>
+      <div class="shortcut" title="f">f</div>
+      <div class="shortcut" title="g">g</div>
+      <div class="shortcut" title="h">h</div>
+      <div class="shortcut" title="i">i</div>
+      <div class="shortcut" title="j">j</div>
+      <div class="shortcut" title="k">k</div>
+      <div class="shortcut" title="l">l</div>
+      <div class="shortcut" title="m">m</div>
+      <div class="shortcut" title="n">n</div>
+      <div class="shortcut" title="o">o</div>
+      <div class="shortcut" title="p">p</div>
+      <div class="shortcut" title="q">q</div>
+      <div class="shortcut" title="r">r</div>
+      <div class="shortcut" title="s">s</div>
+      <div class="shortcut" title="t">t</div>
+      <div class="shortcut" title="u">u</div>
+      <div class="shortcut" title="v">v</div>
+      <div class="shortcut" title="w">w</div>
+      <div class="shortcut" title="x">x</div>
+      <div class="shortcut" title="y">y</div>
+      <div class="shortcut" title="z">z</div>
+
+      <h2>Uppercase</h2>
+
+      <div class="shortcut" title="A">A</div>
+      <div class="shortcut" title="B">B</div>
+      <div class="shortcut" title="C">C</div>
+      <div class="shortcut" title="D">D</div>
+      <div class="shortcut" title="E">E</div>
+      <div class="shortcut" title="F">F</div>
+      <div class="shortcut" title="G">G</div>
+      <div class="shortcut" title="H">H</div>
+      <div class="shortcut" title="I">I</div>
+      <div class="shortcut" title="J">J</div>
+      <div class="shortcut" title="K">K</div>
+      <div class="shortcut" title="L">L</div>
+      <div class="shortcut" title="M">M</div>
+      <div class="shortcut" title="N">N</div>
+      <div class="shortcut" title="O">O</div>
+      <div class="shortcut" title="P">P</div>
+      <div class="shortcut" title="Q">Q</div>
+      <div class="shortcut" title="R">R</div>
+      <div class="shortcut" title="S">S</div>
+      <div class="shortcut" title="T">T</div>
+      <div class="shortcut" title="U">U</div>
+      <div class="shortcut" title="V">V</div>
+      <div class="shortcut" title="W">W</div>
+      <div class="shortcut" title="X">X</div>
+      <div class="shortcut" title="Y">Y</div>
+      <div class="shortcut" title="Z">Z</div>
+
+      <h2>Punctuation</h2>
+
+      <div class="shortcut" title="Full stop">.</div>
+      <div class="shortcut" title="Comma">,</div>
+      <div class="shortcut" title="Colon">:</div>
+      <div class="shortcut" title="Semicolon">;</div>
+      <div class="shortcut" title="Solidus">/</div>
+      <div class="shortcut" title="Reverse solidus">\</div>
+      <div class="shortcut" title="Question mark">?</div>
+      <div class="shortcut" title="Exclamation mark">!</div>
+      <div class="shortcut" title="Commercial at">@</div>
+      <div class="shortcut" title="Number sign">#</div>
+      <div class="shortcut" title="Dollar sign">$</div>
+      <div class="shortcut" title="Percent sign">%</div>
+      <div class="shortcut" title="Circumflex accent">^</div>
+      <div class="shortcut" title="Ampersand">&</div>
+      <div class="shortcut" title="Asterisk">*</div>
+      <div class="shortcut" title="Minus">-</div>
+      <div class="shortcut" title="Low line">_</div>
+      <div class="shortcut" title="Plus sign">+</div>
+      <div class="shortcut" title="Equals sign">=</div>
+      <div class="shortcut" title="Apostrophe">'</div>
+      <div class="shortcut" title="Quotation mark">"</div>
+      <div class="shortcut" title="Grave accent">`</div>
+      <div class="shortcut" title="Tilde">~</div>
+      <div class="shortcut" title="Vertical line">|</div>
+      <div class="shortcut" title="Left parenthesis">(</div>
+      <div class="shortcut" title="Right parenthesis">)</div>
+      <div class="shortcut" title="Left square bracket">[</div>
+      <div class="shortcut" title="Right square bracket">]</div>
+      <div class="shortcut" title="Left curly bracket">{</div>
+      <div class="shortcut" title="Right curly bracket">}</div>
+      <div class="shortcut" title="Less-than sign"><</div>
+      <div class="shortcut" title="Greater-than sign">></div>
+
+      <h2>Invisible</h2>
+
+      <div class="shortcut" title="Left">←</div>
+      <div class="shortcut" title="Up">↑</div>
+      <div class="shortcut" title="Right">→</div>
+      <div class="shortcut" title="Down">↓</div>
+      <div class="shortcut" title="Home">↖</div>
+      <div class="shortcut" title="End">↘</div>
+      <div class="shortcut" title="Page up">⇞</div>
+      <div class="shortcut" title="Page down">⇟</div>
+      <div class="shortcut" title="Enter">⏎</div>
+      <div class="shortcut" title="Tab">⇥</div>
+      <div class="shortcut" title="Escape">⎋</div>
+      <div class="shortcut" title="Caps lock">⇪</div>
+      <div class="shortcut" title="Backspace">⌫</div>
+      <div class="shortcut" title="Delete">⌦</div>
+      <div class="shortcut" title="Space">␣</div>
+      <div class="shortcut" title="Insert">⎀</div>
+
+      <H2>Compound</H2>
+
+      <div class="shortcuts">
+        <div class="shortcut">⌃+A</div>
+        <div class="shortcut">⌥+B</div>
+        <div class="shortcut">⌘+C</div>
+        <div class="shortcut">⇧+D</div>
+      </div>
+
+      <div class="shortcuts">
+        <div class="shortcut">⌃+1</div>
+        <div class="shortcut">⌥+2</div>
+        <div class="shortcut">⌘+3</div>
+        <div class="shortcut">⇧+4</div>
+      </div>
+
+      <div class="shortcuts">
+        <div class="shortcut">⌃+←</div>
+        <div class="shortcut">⌥+↑</div>
+        <div class="shortcut">⌘+→</div>
+        <div class="shortcut">⇧+↓</div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
