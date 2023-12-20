@@ -1,7 +1,7 @@
 {
   "name": "shortcuts-font",
   "repository": "github:fabiospampinato/shortcuts-font",
-  "description": "A minimal font designed to beutifully render characters used for representing shortcuts.",
+  "description": "A minimal font designed to beautifully render characters used for representing shortcuts.",
   "version": "2.2.0",
   "type": "module",
   "scripts": {
