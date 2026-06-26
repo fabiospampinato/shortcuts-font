@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "clean": "tsex clean",
-    "build": "ifont build -i resources/icons/**/*.svg -o resources/fonts/ShortcutsFont.ttf",
+    "build": "npm run build:ttf && npm run build:woff2",
+    "build:ttf": "ifont build -i resources/icons/**/*.svg -o resources/fonts/ShortcutsFont.ttf",
+    "build:woff2": "woff2_compress resources/fonts/ShortcutsFont.ttf",
     "demo": "open resources/demo/index.html",
     "preview": "ifont preview -i resources/icons/**/*.svg",
     "prepublishOnly": "npm run clean && npm run build"
