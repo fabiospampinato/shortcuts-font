@@ -3,7 +3,7 @@
   "repository": "github:fabiospampinato/shortcuts-font",
   "description": "A minimal font designed to beautifully render characters used for representing shortcuts.",
   "license": "MIT",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "type": "module",
   "scripts": {
     "clean": "tsex clean",
