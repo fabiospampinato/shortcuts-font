@@ -1,0 +1,10 @@
+resources/demo
+resources/icons
+resources/base.otf
+
+src
+tasks
+test
+
+.editorconfig
+tsconfig.json
