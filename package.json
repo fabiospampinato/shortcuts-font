@@ -16,8 +16,7 @@
     "font"
   ],
   "devDependencies": {
-    "ifont": "^1.0.2",
-    "shortcuts": "^3.0.1",
-    "tsex": "^3.0.1"
+    "ifont": "^2.0.0",
+    "tsex": "^4.0.2"
   }
 }
