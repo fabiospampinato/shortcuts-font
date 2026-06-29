@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shortcuts Font | Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <style>
+      @font-face {
+        font-family: ShortcutsFont;
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(../fonts/ShortcutsFont.ttf) format('opentype');
+      }
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      .showcase h2:first-child {
+        margin-top: 0;
+      }
+      .shortcut {
+        font-family: ShortcutsFont;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.25rem;
+        height: 1.25rem;
+      }
+      .shortcuts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        height: 2em;
+      }
+    </style>
+
+    <div class="showcase">
+
+      <h2>Modifiers</h2>
+
+      <ul>
+        <li>Alt: <span class="shortcut">Alt</span></li>
+        <li>AltLeft: <span class="shortcut">AltLeft</span></li>
+        <li>AltRight: <span class="shortcut">AltRight</span></li>
+        <li>Option: <span class="shortcut">Option</span></li>
+        <li>OptionLeft: <span class="shortcut">OptionLeft</span></li>
+        <li>OptionRight: <span class="shortcut">OptionRight</span></li>
+        <li>Control: <span class="shortcut">Control</span></li>
+        <li>ControlLeft: <span class="shortcut">ControlLeft</span></li>
+        <li>ControlRight: <span class="shortcut">ControlRight</span></li>
+        <li>Ctrl: <span class="shortcut">Ctrl</span></li>
+        <li>CtrlLeft: <span class="shortcut">CtrlLeft</span></li>
+        <li>CtrlRight: <span class="shortcut">CtrlRight</span></li>
+        <li>Cmd: <span class="shortcut">Cmd</span></li>
+        <li>CmdLeft: <span class="shortcut">CmdLeft</span></li>
+        <li>CmdRight: <span class="shortcut">CmdRight</span></li>
+        <li>Command: <span class="shortcut">Command</span></li>
+        <li>CommandLeft: <span class="shortcut">CommandLeft</span></li>
+        <li>CommandRight: <span class="shortcut">CommandRight</span></li>
+        <li>Meta: <span class="shortcut">Meta</span></li>
+        <li>MetaLeft: <span class="shortcut">MetaLeft</span></li>
+        <li>MetaRight: <span class="shortcut">MetaRight</span></li>
+        <li>Shift: <span class="shortcut">Shift</span></li>
+      </ul>
+
+      <h2>Invisible</h2>
+
+      <ul>
+        <li>Left: <span class="shortcut">Left</span></li>
+        <li>Up: <span class="shortcut">Up</span></li>
+        <li>Right: <span class="shortcut">Right</span></li>
+        <li>Down: <span class="shortcut">Down</span></li>
+        <li>Home: <span class="shortcut">Home</span></li>
+        <li>End: <span class="shortcut">End</span></li>
+        <li>PageUp: <span class="shortcut">PageUp</span></li>
+        <li>PageDown: <span class="shortcut">PageDown</span></li>
+        <li>Enter: <span class="shortcut">Enter</span></li>
+        <li>Return: <span class="shortcut">Return</span></li>
+        <li>Tab: <span class="shortcut">Tab</span></li>
+        <li>Esc: <span class="shortcut">Esc</span></li>
+        <li>Escape: <span class="shortcut">Escape</span></li>
+        <li>Capslock: <span class="shortcut">Capslock</span></li>
+        <li>CapsLock: <span class="shortcut">CapsLock</span></li>
+        <li>Backspace: <span class="shortcut">Backspace</span></li>
+        <li>Del: <span class="shortcut">Del</span></li>
+        <li>Delete: <span class="shortcut">Delete</span></li>
+        <li>Space: <span class="shortcut">Space</span></li>
+        <li>Spacebar: <span class="shortcut">Spacebar</span></li>
+        <li>Insert: <span class="shortcut">Insert</span></li>
+      </ul>
+
+      <H2>Compound</H2>
+
+      <ul>
+        <li>Control+Left: <span class="shortcut">Control+Left</span></li>
+        <li>Alt+Up: <span class="shortcut">Alt+Up</span></li>
+        <li>Command+Right: <span class="shortcut">Command+Right</span></li>
+        <li>Shift+Down: <span class="shortcut">Shift+Down</span></li>
+        <li>Control&zwnj;Left: <span class="shortcut">Control&zwnj;Left</span></li>
+        <li>Alt&zwnj;Up: <span class="shortcut">Alt&zwnj;Up</span></li>
+        <li>Command&zwnj;Right: <span class="shortcut">Command&zwnj;Right</span></li>
+        <li>Shift&zwnj;Down: <span class="shortcut">Shift&zwnj;Down</span></li>
+      </ul>
+
+    </div>
+
+  </body>
+</html>

@@ -1,7 +1,7 @@
 {
   "name": "shortcuts-font",
   "repository": "github:fabiospampinato/shortcuts-font",
-  "description": "A minimal font designed to beautifully render characters used for representing shortcuts.",
+  "description": "A minimal font designed to beautifully render symbols and ligatures used for representing shortcuts.",
   "license": "MIT",
   "version": "2.2.2",
   "type": "module",
@@ -10,7 +10,9 @@
     "build": "npm run build:ttf && npm run build:woff2",
     "build:ttf": "ifont build -i resources/icons/**/*.svg -o resources/fonts/ShortcutsFont.ttf",
     "build:woff2": "woff2_compress resources/fonts/ShortcutsFont.ttf",
-    "demo": "open resources/demo/index.html",
+    "demo": "npm run demo:symbols && npm run demo:title",
+    "demo:symbols": "open resources/demo/symbols.html",
+    "demo:title": "open resources/demo/title.html",
     "preview": "ifont preview -i resources/icons/**/*.svg",
     "prepublishOnly": "npm run clean && npm run build"
   },
@@ -19,7 +21,7 @@
     "font"
   ],
   "devDependencies": {
-    "ifont": "^2.0.0",
+    "ifont": "^2.1.0",
     "tsex": "^4.0.2"
   }
 }
